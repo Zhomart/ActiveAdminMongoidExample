@@ -10,10 +10,9 @@
 ## Problem with BSON
 
 If you have error, try to clean your cookies. It could be that your session
-stores not string bson id representation.
+stores incorrect bson id representation.
 
-It's described here https://github.com/plataformatec/devise/pull/2882 or 
-https://github.com/plataformatec/devise/issues/2949
+It's described here https://github.com/plataformatec/devise/issues/2949
 
 ```ruby
 # app/models/admin_user.rb
@@ -29,7 +28,7 @@ class AdminUser
 end
 ```
 
-OR
+Other not so good solutions
 
 ```ruby
 # config/initializers/ext/bson.rb
@@ -45,7 +44,7 @@ module BSON
 end
 ```
 
-OR
+and
 
 ```ruby
 module Mongoid
