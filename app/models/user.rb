@@ -37,4 +37,5 @@ class User
 
   field :name, type: String
 
+  has_many :phones
 end

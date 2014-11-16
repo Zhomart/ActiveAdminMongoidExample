@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: 99d76711783c229965095d4b818d02b46093ba5e
+  revision: 327c62d9f8f5ad39f7cf9363f2195b44076e3baa
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/activerecord-hackery/ransack.git
-  revision: 64e13436e69fb2f548c67a0e7da2d6747bede1e3
+  revision: 60e7ef0facec784bb8efa9aeb0327e26c79709b8
   specs:
     ransack (1.5.1)
       actionpack (>= 3.0)
@@ -71,11 +71,18 @@ GEM
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
+    better_errors (2.0.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
     bson (2.3.0)
     builder (3.2.2)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -84,7 +91,8 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     connection_pool (2.0.0)
-    devise (3.4.0)
+    debug_inspector (0.0.2)
+    devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -106,7 +114,7 @@ GEM
       has_scope (~> 0.6.0.rc)
       railties (>= 3.2, < 4.2)
       responders (~> 1.0)
-    jbuilder (2.2.4)
+    jbuilder (2.2.5)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
@@ -198,6 +206,8 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   activeadmin-mongoid!
+  better_errors
+  binding_of_caller
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 2.0)
