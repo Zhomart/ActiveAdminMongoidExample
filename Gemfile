@@ -29,7 +29,8 @@ gem 'mongoid', '~> 4.0.0'
 gem 'devise'
 
 gem 'ransack', github: 'activerecord-hackery/ransack'
-gem 'activeadmin',         git: 'git@bitbucket.org:Zhomart/mongoid.git', branch: 'mongoid-old'
+# gem 'activeadmin',         git: 'git@bitbucket.org:Zhomart/active_admin.git', branch: 'mongoid-old'
+gem 'activeadmin',         github: 'Zhomart/active_admin', branch: 'mongoid-old'
 # gem 'activeadmin-mongoid', github: 'Zhomart/activeadmin-mongoid', branch: 'ransack'
 
 # Use ActiveModel has_secure_password
